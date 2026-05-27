@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Heart, Shield } from 'lucide-react';
+import { Shield } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-inner">
           <Link to="/" className="navbar-brand">
-            <div className="navbar-logo">S</div>
+            <img src={logo} alt="She Can Foundation Logo" className="navbar-logo-img" />
             <span className="navbar-brand-text">
               <span>She Can</span> Foundation
             </span>
@@ -37,7 +38,7 @@ const Navbar = () => {
               Admin
             </Link>
             <a href="#contact" className="btn btn-primary btn-sm">
-              <Heart size={14} />
+              <img src={logo} alt="" className="btn-logo-icon" />
               Get Involved
             </a>
           </div>

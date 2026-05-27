@@ -197,19 +197,20 @@ img {
   gap: var(--space-sm);
 }
 
-.navbar-logo {
+.navbar-logo-img {
   width: 38px;
   height: 38px;
   border-radius: var(--radius-sm);
-  background: var(--gradient-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.1rem;
-  color: white;
-  box-shadow: var(--shadow-glow);
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(192, 38, 211, 0.4));
+}
+
+.btn-logo-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  display: inline-block;
+  filter: brightness(0) invert(1);
 }
 
 .navbar-brand-text {
